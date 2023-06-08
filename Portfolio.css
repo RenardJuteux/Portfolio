@@ -10,7 +10,18 @@ header {
     position: fixed;
     top: -0.3em;
     right: -0.3em;
+    flex-wrap: wrap;
 }
+
+@media screen and (max-width: 100vh) {
+    .triangle1 {
+      visibility: none;
+    }
+    .triangle2{
+        border-left: 15em solid black;
+    }
+  }
+
 #navi {
     display: flex;
     flex-direction: row-reverse;
@@ -81,6 +92,7 @@ footer{
     flex-direction: row;
     font-size: x-large;
     margin-left: 1em ;
+    margin-right: 1em;
 }
 h3{
     text-decoration: underline;
