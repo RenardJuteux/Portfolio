@@ -57,7 +57,7 @@ header {
     position: fixed;
     top: 0em;
     left: 0em;
-        height: 0;
+    height: 0;
     border-left: 0em solid transparent;
     border-bottom: 9em solid transparent;
     border-right: 18em solid white;
@@ -77,31 +77,21 @@ footer{
 #partenaire{
     display: flex;
     flex-direction: row;
-    font-size: xx-large;
+    font-size: x-large;
     margin-left: 1em ;
-    margin-right: 1em;
 }
 h3{
     text-decoration: underline;
-    font-size: xx-large;
+    font-size: x-large;
 }
 #coordonnees a{
     color: black;
     text-decoration: none;
-}
-#coordonnees{
     display: flex;
     flex-direction: column;
-    margin-right: 1em;
-    
+    margin-bottom: 0.5em;
 }
-#reseaux{
+#partenaires{
     display: flex;
-    flex-direction: column;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-#reseaux a{
-    color: black;
-    text-decoration: none;
+    flex-direction: row;
 }
