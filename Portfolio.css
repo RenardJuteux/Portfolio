@@ -7,19 +7,20 @@ body{
 header {
     display: flex;
     justify-content: end;
-    position: fixed;
+    position: relative;
     top: -0.3em;
     right: -0.3em;
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 100vh) {
+@media screen and (max-width: 1000px) {
     .triangle1 {
-      visibility: none;
+        display: none;
     }
     .triangle2{
-        border-left: 15em solid black;
+        display: none;
     }
+    
   }
 
 #navi {
@@ -78,14 +79,13 @@ header {
 footer{
     display: flex;
     align-items: flex-end;
-    position: fixed;
     background-color: white;
     background-image: url(img/nav.png);
     border: solid #333 0.35em;
     border-top-right-radius:10em;
     border-bottom-right-radius: 10em;
-    bottom: -0.3em;
-    left: -0.3em;
+    margin: 0em 0em -0.5em -0.5em;
+    
 }
 #partenaire{
     display: flex;
@@ -107,4 +107,56 @@ h3{
 #partenaires{
     display: flex;
     flex-direction: row;
+}
+#langues{
+    padding: 1em 1em 1em 0em;
+}
+#niv_ang{
+    background-color: white;
+    border-radius: 1em;
+    width: 100%;    
+}
+#niv_r_ang{
+    height: 100%;
+    width: 80%;
+    background-color: #333;
+    border-radius: 1em;
+    color: transparent;
+}
+#niv_esp{
+    background-color: white;
+    border-radius: 1em;
+}
+#niv_r_esp{
+    height: 100%;
+    width: 50%;
+    background-color: #333;
+    border-radius: 1Em;
+    color: transparent;
+}
+#langues ul{
+    list-style: none;
+    font-size: x-large;
+    color: white;
+}
+#contenu{
+    right: 25%;
+    left: 25%;
+    top: 25%;
+    background-color: gray;
+    border-radius: 0.5em;
+    width: 75%;
+    margin-bottom: 5em;
+}
+#diplo{
+    color: white;
+    font-size: large;
+}
+#diplo ul{
+    list-style: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    
 }
