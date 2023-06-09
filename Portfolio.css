@@ -87,9 +87,11 @@ footer{
     background-image: url(img/nav.png);
     border: solid #333 0.35em;
     border-top-right-radius:10em;
+    bottom: 0em;
     border-bottom-right-radius: 10em;
     margin: 0em 0em -0.5em -0.5em;
     width: fit-content;
+    color: black;
     
 }
 #partenaire{
@@ -156,6 +158,7 @@ h3{
     width: 75%;
     margin-bottom: 5em;
     padding-left: 1em;
+    
 }
 #diplo{
     color: white;
@@ -188,4 +191,33 @@ main{
 .projet p{
     color: #333;
 }
+h1{
+    text-align: center;
+}
+#contenu p{
+    font-size: x-large;
+    flex-wrap: wrap ;
+}
+#sae div{
+    margin-top: 5em;
+    margin-bottom: 5em ;
+}
+#status{
+    color: red;
+    font-size: xx-large;
+}
+#sae{
+    right: 25%;
+    left: 25%;
+    top: 25%;
+    background-color: gray;
+    border-radius: 0.5em;
+    width: 75%;
+    margin-bottom: 5em;
+    padding-left: 1em;
+}
+#sae p {
+    font-size: x-large;
+}
+
 
