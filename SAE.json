@@ -1,0 +1,38 @@
+{
+    "Projets" : [
+        {
+            "name" : "SAE 01 - SAE 02",
+            "statut" : "Terminé",
+            "objectif" : "L'objectif principal de cette SAE consistait à la production d'une intelligence artificielle capable de classifier des dépêches en fonction de certains mots présent dans celles-ci. Cette tâche était à réaliser en duo ou en trio avec une explication orale à faire au professeur référant",
+            "intitulé" : "Implémentation d'un besoin client / Comparaison d'approche algorithmique",
+            "thème" : "Programmation en Java",
+            "nous" : "Un programme avec différentes méthodes qui classait les dépêches en fonction d'un lexique défini par catégorie. Nous avons produit plusieurs classes et méthodes pour réaliser ce programme notamment la méthode de classification en fonction d'un lexique au format .txt, la méthode pour rédiger ce lexique et la valeur des mots de manières automatique.",
+            "je" : "Je me suis occupé de programmer la méthode qui s'occupait de classer les dépêches qui prenait comme argument une liste de dépêches, une liste de catégories et fichier comportant le lexique. La méthode parcourait chaque mots de chaque dépêches pour vérifier s'il était présent à l'intérieur du lexique. Tout cela dans le but d'en extraire un fichier au format texte avec les dépêches et leurs catégories correspondante ainsi qu'un taux correspondant à la réussite de la classification de la part du programme.",
+            "attente" : "Il était attendu de nous de réaliser un programme fonctionnel et quasiment automatique, du côté de notre groupe nous sommes parvenus à réaliser les attentes cependant nous avons tenté d'optimiser au plus possible notre programme dès son écriture et non après l'avoir écrit une première fois.",
+            "compétence" : "Cette SAE m'a permit d'apprendre à analyser et optimiser des programmes mais également de développer des applications simples et rapides. J'ai pu également améliorer mon travail aussi bien en équipe que individuellement."
+        },
+        {
+           "name" : "Méga SAE de première année",
+           "statut" : "Terminé",
+           "objectif" : "Le but de cette MégaSAE consiste à la production d'une application lourde à destination des organisateurs d'événements dans le but de faciliter l'organisation d'événements qui a pu s'avérer être compliqué à cause du COVID. Cette SAE est en groupe de 5 ou 6 personnes avec trois présentations à faire en fin de projet.",
+           "intitulé" : "MégaSAE",
+           "thème" : "Analyse et conception",
+           "nous" : "Notre idée d'application est centré sur les organisateurs d'événements de Bureau Des Elèves (BDE) et de ce fait des événements par les étudiants, pour les étudiants. Nous avons d'abord du réaliser un exercice d'optimisation en mathématique. Puis nous avons réalisé un dossier de conception regroupant des diagrammes de cas d'utilisation, un diagramme de classe et des diagrammes de séquence. Une fois ceci terminer, on s'attaque à la conception visuelle et interne de notre application. Pour la partie visuelle, nous avons réalisé pluseirus personnas ainsi que des maquettes pour chacune des parties visuelle de notre application (Création de compte, page principale, ajout d'événements...). Et pour la partie interne de l'application nous nous sommes servis de Java, JavaFX et XML.",
+           "je" : "Je me suis occupé de créer des fichiers texte regroupant les 101 départements français avec leurs 18 plus grande villes tout ça organisé dans l'ordre des départements et tout ce texte a été fait grâce à un programme qui s'en est chargé seul que j'ai programmé et regroupe 1918 lignes de texte. Je me suis également occupé de coder en Java la partie concernant la classe événements. Pour ce qui est du reste nous avons travaillé en groupe et moins individuellement pour la partie UML et Mathématique notamment.",
+           "attente" : "L'attente de ce projet est de produire une application lourde et fonctionnelles en utilisant du Java, du JavaFX, de l'XML, de l'UML... tout cela dans le but de faire trois présentation dont une en anglais pour parler de notre application.",
+           "compétence" : "Cette SAE m'a permis d'apprendre à conceptualisé une application et pas seulement la partie interne avec le code mais également la partie visuelle à destination de l'utilisateur et la complexité de sa conception. J'ai pu également apprendre à travailler sur un langage que je n'avais que très peu pratiqué, le Python, pour produire le fichier texte." 
+        },
+        {
+            "name" : "Etre membre d'un BDE",
+            "statut" : "Terminé",
+            "objectif" : "",
+            "intitulé" : "",
+            "thème" : "",
+            "nous" : "",
+            "je" : "J'ai été le responsable du pôle événementile du Bureau Des Elèves (BDE) du BUT Informatique de Grenoble. Je suis celui en charge de tout ce qui concerne l'organisation des événements quel qu'il soit que ce soit de contacter les établissements masi également les BDE externes avec qui nous voudrions être en partenariait lors d'un événement. Je m'occupe également de la communication avec les marques pour d'éventuel partenariat à l'année ou temporairement. Avec mon collègue du pôle communication nous nous occupons de tout ce qui s'agit de la partie communication que ce soit sur les réseaux sociaux ou bien en présentiel.",
+            "attente" : "",
+            "compétence" : "" 
+        }
+        
+    ]
+}
