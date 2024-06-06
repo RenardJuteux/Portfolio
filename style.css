@@ -70,7 +70,7 @@ main{
     border-bottom-left-radius: 2em;
     position: absolute;
 }
-#projet_affiche{
+#projetAffiche{
     position: absolute;
     background-color: white;
     width: fit-content;
