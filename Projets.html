@@ -52,7 +52,7 @@
                             const container = document.getElementById('projetAffiche');
                             data.Projets.forEach((projet, index) => {
                                 const div = document.createElement('div');
-                                div.className = 'projet_affiche hide';
+                                div.className = 'projetAffiche hide';
                                 div.id = 'info' + index
                                 div.innerHTML = `
                                     <h2>${projet.name}</h2>
@@ -86,7 +86,7 @@
                         const details = document.getElementById('info' + index);
 
                         // Masquer tous les détails
-                        detailsContainer.querySelectorAll('.projet_affiche').forEach(div => {
+                        detailsContainer.querySelectorAll('.projetAffiche').forEach(div => {
                             div.classList.add('hide');
                         });
 
