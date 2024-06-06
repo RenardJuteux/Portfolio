@@ -72,6 +72,9 @@ main{
 }
 #projetAffiche{
     position: absolute;
+    
+    position: sticky;
+    top: 0.5em;
 }
 .projetAffiche{
     background-color: white;
@@ -81,8 +84,6 @@ main{
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
     padding: 0.5em;
-    position: sticky;
-    top: 0.5em;
 }
 .projet{
     display: flex;
