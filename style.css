@@ -66,6 +66,8 @@ main{
     width: fit-content;
     display: flex;
     flex-direction: column;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
 }
 .projet{
     justify-content: center;
