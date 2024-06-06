@@ -26,8 +26,11 @@
                                 const nom_img = "img/" + projet.name + ".png";
                                 div.className = 'projet';
                                 div.innerHTML = `
-                                  <h2>${projet.name}</h2>
-                                  <img src="${nom_img}" alt="image ${projet.name} ">
+                                    <h2>${projet.name}</h2>
+                                    <label class="image-checkbox">
+                                        <input type="checkbox" class="checkImage" hidden />
+                                        <img src="${nom_img}" alt="image ${projet.name} ">
+                                    </label>
                                 `;
                                 container.appendChild(div);
                               });
@@ -36,8 +39,63 @@
                         }
                     
                         // Appeler la fonction au chargement de la page
-                        document.addEventListener('DOMContentLoaded', loadProjects);
+                        document.addEventListener('DOMContentLoaded', function(){
+                            var checkboxs = document.getElementsByClassName('checkImage');
+                            var index = 1
+                            checkboxs.forEach((checkbox) => {
+                                var image = checkbox.nextElementSibling;
+                                var conteneur = document.getElementById('projets')
+                                var conteneurAffiche = document.getElementById('projet_affiché')
+                                var string_info = 'info' + index
+                                var info = document.getElementById(string_info)
+                                checkbox.addEventListener('change', function() {
+                                    if (checkbox.checked){
+                                        conteneur.classList.add('hide')
+                                        conteneurAffiche.classList.remove('hide')
+                                        info.classList.remove('hide')
+                                    }else {
+                                        conteneur.classList.remove('hide')
+                                        conteneurAffiche.classList.add('hide')
+                                        info.classList.add('hide')
+                                    }
+                                })
+                            });
+                        });
                       </script>
+                </div>
+                <div id="projet_affiché" class="hide">
+                    <script>
+                        // Fonction pour charger et afficher les projets
+                        function loadProjectsDisplayed() {
+                          fetch("SAE.json") // Remplacez 'projets.json' par le chemin vers votre fichier JSON
+                            .then(response => response.json())
+                            .then(data => {
+                              const container = document.getElementById('projets');
+                              const index = 1
+                              data.Projets.forEach(projet => {
+                                const div = document.createElement('div');
+                                const nom_img = "img/" + projet.name + ".png";
+                                div.className = 'projet_affiché hide';
+                                div.id = 'info' + index
+                                div.innerHTML = `
+                                    <h2>${projet.name}</h2>
+                                    <p class="statut"> ${projet.statut}</p>
+                                    <p><strong>Objectif:</strong> ${projet.objectif}</p>
+                                    <p><strong>Intitulé:</strong> ${projet.intitulé}</p>
+                                    <p><strong>Thème:</strong> ${projet.thème}</p>
+                                    <p><strong>Nous avons réalisé:</strong> ${projet.nous}</p>
+                                    <p><strong>J'ai réalisé:</strong> ${projet.je}</p>
+                                    <p><strong>Attentes:</strong> ${projet.attente}</p>
+                                    <p><strong>Compétences:</strong> ${projet.compétence}</p
+                                `;
+                                container.appendChild(div);
+                              });
+                            })
+                            .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
+                        }
+                        // Appeler la fonction au chargement de la page
+                        document.addEventListener('DOMContentLoaded', loadProjectsDisplayed);
+                    </script>
                 </div>
             </main>
         </body>

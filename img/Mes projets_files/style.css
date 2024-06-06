@@ -78,12 +78,3 @@ main{
     width: 50em;
     height: 25em;
 }
-.image-checkbox{
-    cursor:pointer;
-}
-.image-checkbox input:checked + img{
-    border: 2px solid blue;
-}
-.statut{
-    color: red;
-}

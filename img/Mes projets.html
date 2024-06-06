@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://renardjuteux.github.io/Portfolio/Projets.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+            <title>Mes projets</title>
+            <link rel="stylesheet" href="./Mes projets_files/style.css">
+        </head>
+        <body>
+            <header>
+                <div id="navi">
+                <a href="https://renardjuteux.github.io/Portfolio/Accueil.html"><p>Accueil</p></a>
+                <a href="https://renardjuteux.github.io/Portfolio/Projets.html#"><p class="current">Projets</p></a>
+                </div>
+            </header>
+            <main>
+                <div id="projets">
+                    <script>
+                        // Fonction pour charger et afficher les projets
+                        function loadProjects() {
+                          fetch("SAE.json") // Remplacez 'projets.json' par le chemin vers votre fichier JSON
+                            .then(response => response.json())
+                            .then(data => {
+                              const container = document.getElementById('projets');
+                              data.Projets.forEach(projet => {
+                                const div = document.createElement('div');
+                                const nom_img = "img/" + projet.name + ".png";
+                                div.className = 'projet';
+                                div.innerHTML = `
+                                  <h2>${projet.name}</h2>
+                                  <img src="${nom_img}" alt="image ${projet.name} ">
+                                `;
+                                container.appendChild(div);
+                              });
+                            })
+                            .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
+                        }
+                    
+                        // Appeler la fonction au chargement de la page
+                        document.addEventListener('DOMContentLoaded', loadProjects);
+                      </script>
+                <div class="projet">
+                                  <h2>SAE 01 - SAE 02</h2>
+                                  <img src="./Mes projets_files/SAE 01 - SAE 02.png" alt="image SAE 01 - SAE 02 ">
+                                </div><div class="projet">
+                                  <h2>Méga SAE de première année</h2>
+                                  <img src="./Mes projets_files/Méga SAE de première année.png" alt="image Méga SAE de première année ">
+                                </div><div class="projet">
+                                  <h2>Etre membre d'un BDE</h2>
+                                  <img src="./Mes projets_files/Etre membre d&#39;un BDE.png" alt="image Etre membre d&#39;un BDE ">
+                                </div></div>
+            </main>
+        
+    </body></html>
