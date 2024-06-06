@@ -71,7 +71,14 @@ main{
     position: absolute;
 }
 #projet_affiché{
+    background-color: white;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
     position: absolute;
+
 }
 .projet{
     display: flex;
