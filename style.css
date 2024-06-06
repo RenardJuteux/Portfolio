@@ -61,3 +61,13 @@ main{
 .current{
     text-decoration: underline;
 }
+.projets{
+    background-color: white;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.projet img{
+    width: 2.5em;
+    height: 2.5em;
+}
