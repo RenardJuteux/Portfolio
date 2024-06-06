@@ -87,3 +87,6 @@ main{
 .statut{
     color: red;
 }
+.hide{
+    visibility: hidden;
+}
