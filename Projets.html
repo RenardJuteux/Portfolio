@@ -53,9 +53,17 @@
                             data.Projets.forEach((projet, index) => {
                                 const div = document.createElement('div');
                                 div.className = 'projet_affiche hide';
-                                div.id = 'info' + index;
+                                div.id = 'info' + index
                                 div.innerHTML = `
-                                    <!-- Votre contenu de projet ici -->
+                                    <h2>${projet.name}</h2>
+                                    <p class="statut"> ${projet.statut}</p>
+                                    <p><strong>Objectif:</strong> ${projet.objectif}</p>
+                                    <p><strong>Intitulé:</strong> ${projet.intitulé}</p>
+                                    <p><strong>Thème:</strong> ${projet.thème}</p>
+                                    <p><strong>Nous avons réalisé:</strong> ${projet.nous}</p>
+                                    <p><strong>J'ai réalisé:</strong> ${projet.je}</p>
+                                    <p><strong>Attentes:</strong> ${projet.attente}</p>
+                                    <p><strong>Compétences:</strong> ${projet.compétence}</p
                                 `;
                                 container.appendChild(div);
                             });
