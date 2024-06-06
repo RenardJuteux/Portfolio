@@ -80,6 +80,7 @@ main{
     flex-direction: column;
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
+    padding: 0.25em;
 }
 .projet{
     display: flex;
