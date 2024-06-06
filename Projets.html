@@ -23,17 +23,11 @@
                               const container = document.getElementById('projets');
                               data.Projets.forEach(projet => {
                                 const div = document.createElement('div');
+                                const nom_img = "/img" + projet.name + ".png";
                                 div.className = 'projet';
                                 div.innerHTML = `
                                   <h2>${projet.name}</h2>
-                                  <p><strong>Statut:</strong> ${projet.statut}</p>
-                                  <p><strong>Objectif:</strong> ${projet.objectif}</p>
-                                  <p><strong>Intitulé:</strong> ${projet.intitulé}</p>
-                                  <p><strong>Thème:</strong> ${projet.thème}</p>
-                                  <p><strong>Nous:</strong> ${projet.nous}</p>
-                                  <p><strong>Je:</strong> ${projet.je}</p>
-                                  <p><strong>Attente:</strong> ${projet.attente}</p>
-                                  <p><strong>Compétence:</strong> ${projet.compétence}</p>
+                                  <img src="${nom_img}" alt="image ${projet.name}"
                                 `;
                                 container.appendChild(div);
                               });
