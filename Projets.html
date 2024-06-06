@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Mes projets</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                <div id="navi">
+                <a href="Accueil.html" ><p>Accueil</p></a>
+                <a href="#"><p class="current">Projets</p></a>
+                </div>
+            </header>
+            <main>
+                <div id="projets">
+                    <script>
+                        // Fonction pour charger et afficher les projets
+                        function loadProjects() {
+                          fetch("SAE.json") // Remplacez 'projets.json' par le chemin vers votre fichier JSON
+                            .then(response => response.json())
+                            .then(data => {
+                              const container = document.getElementById('container');
+                              data.Projets.forEach(projet => {
+                                const div = document.createElement('div');
+                                div.className = 'projet';
+                                div.innerHTML = `
+                                  <h2>${projet.name}</h2>
+                                  <p><strong>Statut:</strong> ${projet.statut}</p>
+                                  <p><strong>Objectif:</strong> ${projet.objectif}</p>
+                                  <p><strong>Intitulé:</strong> ${projet.intitulé}</p>
+                                  <p><strong>Thème:</strong> ${projet.thème}</p>
+                                  <p><strong>Nous:</strong> ${projet.nous}</p>
+                                  <p><strong>Je:</strong> ${projet.je}</p>
+                                  <p><strong>Attente:</strong> ${projet.attente}</p>
+                                  <p><strong>Compétence:</strong> ${projet.compétence}</p>
+                                `;
+                                container.appendChild(div);
+                              });
+                            })
+                            .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
+                        }
+                    
+                        // Appeler la fonction au chargement de la page
+                        document.addEventListener('DOMContentLoaded', loadProjects);
+                      </script>
+                </div>
+            </main>
+        </body>
+    </html>
