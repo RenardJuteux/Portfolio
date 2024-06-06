@@ -73,7 +73,7 @@ main{
 #projetAffiche{
     position: absolute;
 }
-.projet_affiche{
+.projetAffiche{
     background-color: white;
     width: fit-content;
     display: flex;
