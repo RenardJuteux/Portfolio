@@ -4,7 +4,7 @@ body{
 }
 #navi{
     background-color: gray;
-    font-size: xx-large;
+    font-size: 2em;
     display: flex;
     flex-direction: row;
     max-width: inherit;
@@ -15,7 +15,12 @@ body{
     color: black;
 }
 #navi a:hover {
-    color: white;
+    color: gray;
+}
+#navi p{
+    background-color: white;
+    border-radius: 1em;
+    padding: 0.25em;
 }
 main{
     justify-content: center;
@@ -52,4 +57,7 @@ main{
 }
 .lang{
     padding-bottom: 1em;
+}
+.current{
+    text-decoration: underline;
 }
