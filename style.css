@@ -68,6 +68,10 @@ main{
     flex-direction: column;
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
+    position: absolute;
+}
+#projet_affiché{
+    position: absolute;
 }
 .projet{
     display: flex;
