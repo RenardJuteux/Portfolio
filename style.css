@@ -71,6 +71,7 @@ main{
 }
 .projet{
     justify-content: center;
+    display: flex;
 }
 .projet img{
     width: 2.5em;
