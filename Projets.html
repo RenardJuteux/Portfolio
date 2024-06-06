@@ -14,14 +14,20 @@
             </header>
             <main>
                 <div id="projets">
-                    <script>
-                        // Fonction pour charger et afficher les projets
-                        function loadProjects() {
-                          fetch("SAE.json") // Remplacez 'projets.json' par le chemin vers votre fichier JSON
-                            .then(response => response.json())
-                            .then(data => {
-                              const container = document.getElementById('projets');
-                              data.Projets.forEach(projet => {
+                    
+                </div>
+                <div id="projet_affiché" class="hide">
+                    
+                </div>
+            </main>
+            <script>
+                // Fonction pour charger et afficher les projets
+                function loadProjects() {
+                    fetch("SAE.json")
+                        .then(response => response.json())
+                        .then(data => {
+                            const container = document.getElementById('projets');
+                            data.Projets.forEach((projet, index) => {
                                 const div = document.createElement('div');
                                 const nom_img = "img/" + projet.name + ".png";
                                 div.className = 'projet';
@@ -29,77 +35,61 @@
                                     <h2>${projet.name}</h2>
                                     <label class="image-checkbox">
                                         <input type="checkbox" class="checkImage" hidden />
-                                        <img src="${nom_img}" alt="image ${projet.name} ">
+                                        <img src="${nom_img}" alt="image ${projet.name}" data-index="${index}">
                                     </label>
                                 `;
                                 container.appendChild(div);
-                              });
-                            })
-                            .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
-                        }
-                    
-                        
-                      </script>
-                </div>
-                <div id="projet_affiché" class="hide">
-                    <script>
-                        // Fonction pour charger et afficher les projets
-                        function loadProjectsDisplayed() {
-                          fetch("SAE.json") // Remplacez 'projets.json' par le chemin vers votre fichier JSON
-                            .then(response => response.json())
-                            .then(data => {
-                              const container = document.getElementById('projets');
-                              const index = 1
-                              data.Projets.forEach(projet => {
+                            });
+                        })
+                        .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
+                }
+
+                // Fonction pour charger et afficher les détails des projets
+                function loadProjectsDisplayed() {
+                    fetch("SAE.json")
+                        .then(response => response.json())
+                        .then(data => {
+                            const container = document.getElementById('projet_affiche');
+                            data.Projets.forEach((projet, index) => {
                                 const div = document.createElement('div');
-                                const nom_img = "img/" + projet.name + ".png";
-                                div.className = 'projet_affiché hide';
-                                div.id = 'info' + index
+                                div.className = 'projet_affiche hide';
+                                div.id = 'info' + index;
                                 div.innerHTML = `
-                                    <h2>${projet.name}</h2>
-                                    <p class="statut"> ${projet.statut}</p>
-                                    <p><strong>Objectif:</strong> ${projet.objectif}</p>
-                                    <p><strong>Intitulé:</strong> ${projet.intitulé}</p>
-                                    <p><strong>Thème:</strong> ${projet.thème}</p>
-                                    <p><strong>Nous avons réalisé:</strong> ${projet.nous}</p>
-                                    <p><strong>J'ai réalisé:</strong> ${projet.je}</p>
-                                    <p><strong>Attentes:</strong> ${projet.attente}</p>
-                                    <p><strong>Compétences:</strong> ${projet.compétence}</p
+                                    <!-- Votre contenu de projet ici -->
                                 `;
                                 container.appendChild(div);
-                              });
-                            })
-                            .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
-                        }
-                    </script>
-                </div>
-            </main>
-        </body>
-        <script>
-            // Appeler la fonction au chargement de la page
-            document.addEventListener('DOMContentLoaded', function(){
-                            loadProjects()
-                            loadProjectsDisplayed()
-                            var checkboxs = document.getElementsByClassName('checkImage');
-                            var index = 1
-                            checkboxs.forEach(function(checkbox) {
-                                var image = checkbox.nextElementSibling;
-                                var conteneur = document.getElementById('projets')
-                                var conteneurAffiche = document.getElementById('projet_affiché')
-                                var string_info = 'info' + index
-                                var info = document.getElementById(string_info)
-                                checkbox.addEventListener('change', function() {
-                                    if (checkbox.checked){
-                                        conteneur.classList.add('hide')
-                                        conteneurAffiche.classList.remove('hide')
-                                        info.classList.remove('hide')
-                                    }else {
-                                        conteneur.classList.remove('hide')
-                                        conteneurAffiche.classList.add('hide')
-                                        info.classList.add('hide')
-                                    }
-                                })
                             });
+                        })
+                        .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
+                }
+
+                // Appeler les fonctions au chargement de la page
+                document.addEventListener('DOMContentLoaded', function() {
+                    loadProjects();
+                    loadProjectsDisplayed();
+                });
+
+                // Gestionnaire de clic pour les images
+                document.addEventListener('click', function(event) {
+                    if (event.target.tagName === 'IMG' && event.target.parentElement.classList.contains('image-checkbox')) {
+                        const index = event.target.dataset.index;
+                        const projetsContainer = document.getElementById('projets');
+                        const detailsContainer = document.getElementById('projet_affiche');
+                        const details = document.getElementById('info' + index);
+
+                        // Masquer tous les détails
+                        detailsContainer.querySelectorAll('.projet_affiche').forEach(div => {
+                            div.classList.add('hide');
                         });
-        </script>
+
+                        // Afficher les détails du projet cliqué
+                        details.classList.remove('hide');
+
+                        // Basculer la visibilité des conteneurs
+                        projetsContainer.classList.add('hide');
+                        detailsContainer.classList.remove('hide');
+                    }
+                });
+            </script>
+        </body>
     </html>
