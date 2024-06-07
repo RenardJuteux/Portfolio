@@ -62,11 +62,11 @@ main{
     text-decoration: underline;
 }
 #projets{  
-    position: sticky;
+    position: absolute;
     top: 0.5em;
 }
 #projetAffiche{
-    position: sticky;
+    position: absolute;
     top: 0.5em;
 }
 .projetAffiche{
