@@ -55,6 +55,7 @@
                                 div.className = 'projetAffiche hide';
                                 div.id = 'info' + index
                                 div.innerHTML = `
+                                    <button class="details-button" type="button" data-index="${index}"> Retour </button>
                                     <h2>${projet.name}</h2>
                                     <p class="statut"> ${projet.statut}</p>
                                     <p><strong>Objectif:</strong> ${projet.objectif}</p>
@@ -64,7 +65,6 @@
                                     <p><strong>J'ai réalisé:</strong> ${projet.je}</p>
                                     <p><strong>Attentes:</strong> ${projet.attente}</p>
                                     <p><strong>Compétences:</strong> ${projet.compétence}</p>
-                                    <button class="details-button" type="button" data-index="${index}"> Retour </button>
                                 `;
                                 container.appendChild(div);
                             });
