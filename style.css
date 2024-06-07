@@ -63,9 +63,8 @@ main{
 }
 #projets{  
     position: relative;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
+    width: fit-content;
+    
 }
 #projetAffiche{
     position: relative;
