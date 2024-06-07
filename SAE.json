@@ -1,6 +1,28 @@
 {
     "Projets" : [
         {
+            "name" : "Jeu ludoéducatif",
+            "statut" : "Terminé",
+            "objectif" : "Créer, au sein d'une équipe, une application en suivant une démarche de développement intérative ou incrémentale. En partant d'un besoin décrit de manière imprécise ou incomplète par un client, l'objectif est de clarifier/compléter. collecter et formaliser le besoin puis de développer une application communicante intégrant la manipulation des données et respectant les paradigmes de qualité (ergonomie des IHM, qualité logicielle...)",
+            "intitulé" : "Développement d'un 'serious game' éducatif",
+            "thème" : "Développement web et efficace/ Management des systèmes d'information/ Anglais",
+            "nous" : "Pour ce projet, nous avons décidé de créer un jeu ludoéducatif sur l'Histoire pour les élèves de troisième. L'idée était de créer un jeu narratif à choix multiple. Nous voulions permettre aux utilisateurs d'avoir le choix entre réviser ou s'amuser. Pour la partie révision, l'utilisateur choisit l'histoire qu'il veut étudier puis la narration commence. Le joueur va devoir choisir à certains moments qui sont considéré comme décisif de faire une choix lié à une question. En mode révision, l'utilisateur dois continuer de répondre à la question tant qu'il n'a pas la bonne réponse. Pour ce qui est de la partie divertissement, si le joueur répond mal à la question alors l'histoire continue avec un chemin de narration différent et donc des résultats différents. Nous avons fait en sorte que les joueurs puissent comparer leurs résultats entre eux avec un classement.",
+            "je" : "Plus particulièrement, je me suis occupé de réaliser toutes les possibilité de transition entre les pages web, tout cela afin que l'utilisateur puise avoir un fil d'ariane tout au long de son parcours. Je me suis également occupé de créer les histoires annexes avec un des membres de l'équipe. Enfin j'ai participé à la création des interfaces graphiques du jeu.",
+            "attente" : "Il était attendu de nous de réaliser un jeu complet, fonctionnel et le tout pour présenter lors d'une soutenance avec un professeur technique et non-technique.",
+            "compétence" : ""
+        },
+        {
+            "name" : "",
+            "statut" : "",
+            "objectif" : "",
+            "intitulé" : "",
+            "thème" : "",
+            "nous" : "",
+            "je" : "",
+            "attente" : "",
+            "compétence" : ""
+        },
+        {
             "name" : "SAE 01 - SAE 02",
             "statut" : "Terminé",
             "objectif" : "L'objectif principal de cette SAE consistait à la production d'une intelligence artificielle capable de classifier des dépêches en fonction de certains mots présent dans celles-ci. Cette tâche était à réaliser en duo ou en trio avec une explication orale à faire au professeur référant",
