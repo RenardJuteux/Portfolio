@@ -40,21 +40,19 @@ main{
     flex-direction: row;
     justify-content: space-evenly;
 }
-.accueil_competence_tech{
+.accueil_competence{
     padding-left: 1em;
     padding-bottom: 1em;
 }
-.accueil_competence_soft{
-    padding-left: 1em;
-    padding-bottom: 1em;
-}
-.accueil_langage_lang{
+
+.accueil_langage{
     padding-left: 1em;
     padding-bottom: 1em;
     display: flex;
     flex-direction: column; 
     font-size: 1.25em;
 }
+
 .lang{
     padding-bottom: 1em;
 }
