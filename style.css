@@ -103,6 +103,5 @@ main{
 }
 .details-button{
     width: fit-content;
-    left: 45%;
-    position: sticky;
+    font-size: 1em;
 }
