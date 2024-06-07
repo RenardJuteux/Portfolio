@@ -77,6 +77,8 @@ main{
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
     padding: 0.5em;
+    position: absolute;
+    top: 0.5em;
 }
 .projet{
     display: flex;
@@ -86,6 +88,8 @@ main{
     width: fit-content;
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
+    position: absolute;
+    top: 0.5em;
 }
 .projet img{
     width: 50em;
