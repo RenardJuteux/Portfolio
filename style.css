@@ -103,5 +103,5 @@ main{
     color: red;
 }
 .hide{
-    visibility: collapse;
+    display: none;
 }
