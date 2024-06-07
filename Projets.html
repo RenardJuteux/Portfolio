@@ -81,16 +81,15 @@
                 // Gestionnaire de bouton retour
                 document.querySelectorAll('.retour').forEach(button => {
                     button.addEventListener('click', function(event){
-                        document.querySelectorAll('.projetAffiche').forEach(div => {
-                            div.classList.add('hide')
-                        })
                         const projetsContainer = document.getElementById('projets');
                         const detailsContainer = document.getElementById('projetAffiche');
                         const details = document.getElementById('info' + index)
                         projetsContainer.classList.remove('hide');
                         detailsContainer.classList.add('hide')
                         details.classList.add('hide');
-
+                        document.querySelectorAll('.projetAffiche').forEach(div => {
+                            div.classList.add('hide')
+                        })
                     })
                 })
 

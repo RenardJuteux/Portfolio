@@ -102,4 +102,6 @@ main{
 }
 .retour{
     width: fit-content;
+    left: 45%;
+    position: sticky;
 }
