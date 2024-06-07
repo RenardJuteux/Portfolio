@@ -62,12 +62,12 @@ main{
     text-decoration: underline;
 }
 #projets{  
-    position: absolute;
-    top: 0.5em;
+    position: relative;
+    width: 80%;
 }
 #projetAffiche{
-    position: absolute;
-    top: 0.5em;
+    position: relative;
+    width: 80%;
 }
 .projetAffiche{
     background-color: white;
@@ -88,8 +88,6 @@ main{
     width: fit-content;
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
-    position: absolute;
-    top: 0.5em;
 }
 .projet img{
     width: 50em;
