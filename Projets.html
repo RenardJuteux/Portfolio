@@ -63,7 +63,8 @@
                                     <p><strong>Nous avons réalisé:</strong> ${projet.nous}</p>
                                     <p><strong>J'ai réalisé:</strong> ${projet.je}</p>
                                     <p><strong>Attentes:</strong> ${projet.attente}</p>
-                                    <p><strong>Compétences:</strong> ${projet.compétence}</p
+                                    <p><strong>Compétences:</strong> ${projet.compétence}</p>
+                                    <button class="retour" type="button" data-index="${index}"> Retour </button>
                                 `;
                                 container.appendChild(div);
                             });
@@ -76,6 +77,22 @@
                     loadProjects();
                     loadProjectsDisplayed();
                 });
+
+                // Gestionnaire de bouton retour
+                document.querySelectorAll('.retour').forEach(button => {
+                    button.addEventListener('click', function(event){
+                        document.querySelectorAll('.projetAffiche').forEach(div => {
+                            div.classList.add('hide')
+                        })
+                        const projetsContainer = document.getElementById('projets');
+                        const detailsContainer = document.getElementById('projetAffiche');
+                        const details = document.getElementById('info' + index)
+                        projetsContainer.classList.remove('hide');
+                        detailsContainer.classList.add('hide')
+                        details.classList.add('hide');
+
+                    })
+                })
 
                 // Gestionnaire de clic pour les images
                 document.addEventListener('click', function(event) {
