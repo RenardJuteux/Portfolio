@@ -73,7 +73,6 @@ main{
 .projetAffiche{
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: white;
     width: fit-content;
     border-bottom-right-radius: 2em;
@@ -100,4 +99,7 @@ main{
 }
 .hide{
     display: none;
+}
+.retour{
+    width: fit-content;
 }
