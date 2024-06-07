@@ -100,7 +100,7 @@ main{
 .hide{
     display: none;
 }
-.retour{
+.details-button{
     width: fit-content;
     left: 45%;
     position: sticky;
