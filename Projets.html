@@ -70,6 +70,18 @@
                             });
                         })
                         .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
+                    attachButtonEventHandlers();
+                }
+
+                function attachButtonEventHandlers() {
+                    document.querySelectorAll('.details-button').forEach(button => {
+                        button.addEventListener('click', function(event) {
+                        // Cachez la section des détails du projet
+                        document.getElementById('projet_affiche').classList.add('hide');
+                        // Affichez la liste des projets
+                        document.getElementById('projets').classList.remove('hide');
+                        });
+                    });
                 }
 
                 // Appeler les fonctions au chargement de la page
@@ -79,19 +91,14 @@
                 });
 
                 // Gestionnaire de bouton retour
-                document.querySelectorAll('.retour').forEach(button => {
-                    button.addEventListener('click', function(event){
-                        const projetsContainer = document.getElementById('projets');
-                        const detailsContainer = document.getElementById('projetAffiche');
-                        const details = document.getElementById('info' + index)
-                        projetsContainer.classList.remove('hide');
-                        detailsContainer.classList.add('hide')
-                        details.classList.add('hide');
-                        document.querySelectorAll('.projetAffiche').forEach(div => {
-                            div.classList.add('hide')
-                        })
-                    })
-                })
+                document.querySelectorAll('.details-button').forEach(button => {
+                    button.addEventListener('click', function(event) {
+                        // Cachez la section des détails du projet
+                        document.getElementById('projet_affiche').classList.add('hide');
+                        // Affichez la liste des projets
+                        document.getElementById('projets').classList.remove('hide');
+                    });
+                });
 
                 // Gestionnaire de clic pour les images
                 document.addEventListener('click', function(event) {
