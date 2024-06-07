@@ -61,18 +61,11 @@ main{
 .current{
     text-decoration: underline;
 }
-#projets{
-    background-color: white;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    border-bottom-right-radius: 2em;
-    border-bottom-left-radius: 2em;
-    position: absolute;
+#projets{  
+    position: sticky;
+    top: 0.5em;
 }
 #projetAffiche{
-    position: absolute;
-    
     position: sticky;
     top: 0.5em;
 }
@@ -89,6 +82,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    width: fit-content;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
 }
 .projet img{
     width: 50em;
