@@ -85,6 +85,7 @@ main{
     align-items: center;
     background-color: white;
     width: fit-content;
+    border: solid black 1px
 }
 .projet img{
     width: 50em;
