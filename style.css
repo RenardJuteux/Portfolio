@@ -92,6 +92,9 @@ main{
     width: 50em;
     height: 25em;
 }
+.projet img:hover{
+    opacity: 50%;
+}
 .image-checkbox{
     cursor:pointer;
 }
