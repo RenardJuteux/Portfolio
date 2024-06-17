@@ -62,7 +62,10 @@ main{
 .current{
     text-decoration: underline;
 }
-#projets{  
+#projets{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     position: relative;
     width: fit-content;
     
@@ -106,9 +109,4 @@ main{
 .details-button{
     width: fit-content;
     font-size: 1em;
-}
-#proj{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
 }
