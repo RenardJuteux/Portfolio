@@ -94,6 +94,9 @@ main{
     width: 100%;
     height: auto;
 }
+.projet h2{
+    align-items: center;
+}
 .projet img:hover{
     opacity: 50%;
 }
