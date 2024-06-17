@@ -82,8 +82,6 @@ main{
     border-bottom-left-radius: 2em;
 }
 .projet{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: white;
     width: fit-content;
