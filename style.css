@@ -95,7 +95,7 @@ main{
     height: auto;
 }
 .projet h2{
-    align-items: center;
+    text-align: center;
 }
 .projet img:hover{
     opacity: 50%;
