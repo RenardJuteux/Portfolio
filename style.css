@@ -69,6 +69,7 @@ main{
 #projetAffiche{
     position: relative;
     width: 80%;
+    grid-column: 1 / -1;
 }
 .projetAffiche{
     display: flex;
@@ -88,8 +89,8 @@ main{
     border: solid black 1px
 }
 .projet img{
-    width: 50em;
-    height: 25em;
+    width: 100%;
+    height: auto;
 }
 .projet img:hover{
     opacity: 50%;
@@ -106,4 +107,9 @@ main{
 .details-button{
     width: fit-content;
     font-size: 1em;
+}
+#proj{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 }
