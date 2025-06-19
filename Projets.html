@@ -3,13 +3,18 @@
         <head>
             <meta charset="utf-8">
             <title>Mes projets</title>
-            <link rel="stylesheet" href="style.css">
+            <link id="theme-style" rel="stylesheet" href="style_light.css">
+            <link rel="stylesheet" href="style_slide.css">
         </head>
         <body>
             <header>
                 <div id="navi">
-                <a href="Accueil.html" ><p>Accueil</p></a>
-                <a href="#"><p class="current">Projets</p></a>
+                    <a href="Accueil.html" ><p>Accueil</p></a>
+                    <a href="Projets.html"><p class="current">Projets</p></a>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
                 </div>
             </header>
             <main>
@@ -121,6 +126,34 @@
                         detailsContainer.classList.remove('hide');
                     }
                 });
+            
+                // Gestion du bouton slide
+                document.getElementById('theme-toggle').addEventListener('change', function () {
+                    if (this.checked) {
+                        // Exemple : passer en thème sombre
+                        document.getElementById('theme-style').href = 'style_dark.css';
+
+                    } else {
+                        // Exemple : revenir au thème clair
+                        document.getElementById('theme-style').href = 'style_light.css';
+
+                    }
+                });
+
+                // Gestion du thème de la page en fonction des pages précédentes
+                window.addEventListener('DOMContentLoaded', function () {
+                    const savedTheme = localStorage.getItem('theme');
+                    const toggle = document.getElementById('theme-toggle');
+
+                    if (savedTheme === 'dark') {
+                        document.getElementById('theme-style').href = 'style_dark.css';
+                        toggle.checked = true;
+                    } else {
+                        document.getElementById('theme-style').href = 'style_light.css';
+                        toggle.checked = false;
+                    }
+                });
+
             </script>
         </body>
     </html>

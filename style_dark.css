@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+    background-color: #212830;
+    color: #D1D5DB;
+}
+#navi{
+    background-color: #151B23;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    max-width: inherit;
+    justify-content: space-evenly;
+}
+#navi a {
+    text-decoration:  none;
+    color: black;
+}
+#navi a:hover {
+    color: gray;
+}
+#navi p{
+    background-color: white;
+    border-radius: 1em;
+    padding: 0.25em;
+}
+main{
+    justify-content: center;
+    display: flex;
+}
+.accueil_background{
+    
+    padding-left: 0.5em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    width: 80%;
+    background-color: #212830;
+    
+}
+.accueil_conteneur{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.accueil_competence{
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.accueil_langage{
+    padding-left: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column; 
+    font-size: 1.25em;
+}
+
+.accueil_cat{
+    padding-bottom: 1em;
+}
+.current{
+    text-decoration: underline;
+}
+#projets{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    position: relative;
+    width: fit-content;
+    
+}
+#projetAffiche{
+    position: relative;
+    width: 80%;
+    grid-column: 1 / -1;
+}
+.projetAffiche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212830;
+    width: fit-content;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+.projet{
+    align-items: center;
+    background-color: #212830;
+    width: fit-content;
+    border: solid black 1px
+}
+.projet img{
+    width: 100%;
+    height: auto;
+}
+.projet h2{
+    text-align: center;
+}
+.projet img:hover{
+    opacity: 50%;
+}
+.image-checkbox{
+    cursor:pointer;
+}
+.statut{
+    color: red;
+}
+.hide{
+    display: none;
+}
+.details-button{
+    width: fit-content;
+    font-size: 1em;
+}
