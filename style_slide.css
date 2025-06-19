@@ -4,6 +4,8 @@
   width: 60px;
   height: 34px;
   margin-top: 0.25em;
+  top: 1em;
+  right: 1em;
 }
 
 /* Cacher la checkbox HTML */
@@ -21,7 +23,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #eeeeee;
   transition: .4s;
   border-radius: 34px;
 }
@@ -34,14 +36,14 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: rgb(129, 128, 128);
   transition: .4s;
   border-radius: 50%;
 }
 
 /* Quand le bouton est activé */
 input:checked + .slider {
-  background-color: #444;
+  background-color: #212830;
 }
 
 input:checked + .slider::before {
