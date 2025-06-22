@@ -1,39 +1,6 @@
 {
     "Projets" : [
         {
-            "name" : "Carnet de bord de stage",
-            "statut" : "Terminé",
-            "objectif" : "Le but de cette SAE, était de modifier une application ainsi qu'un serveur web crée afin de les rendre plus performant, plus facile à la compréhension et faciliter l'utilisation.",
-            "intitulé" : "Carnet de stage web/mobile",
-            "thème" : "Programmation web et mobile",
-            "nous" : "Pour ce projet nous avons décidé de modifier principalement l'application mobile. Suite à une analyse, nous nous sommes aperçu que ce qui était à modifier sur la partie web concernait principalement de l'esthétique et de l'apparence plus que le fonctionnement tandis que pour la partie mobile il s'agissait de l'inverse. C'est pourquoi nous avons décidé de nous séparer en deux groupes de 3 et de 4. Le groupe de 3 se chargeait de la partie web tandis que le groupe de 4 se chargeait de la partie mobile.",
-            "je" : "J'étais dans le groupe chargé de la partie web. J'ai participé à la création des maquettes puis à leur réalisation afin de rendre le site plus facile à la lecture et la compréhension. J'ai également participé à la légère amélioration côté code de l'application web.",
-            "attente" : "Pour ce projet, il était attendu de repérer les erreurs laissés volontairement par les professeurs qui avaient crée l'application. Il fallait corriger ces erreurs puis présenter lors d'une soutenance orale tous les changements que nous avions apporté aux deux applications.",
-            "compétence" : "Ce projet m'a permis, en plus de développer mes compétences techniques, d'apprendre à travailler en groupe afin de pouvoir développer mes compétences douces également. Le projet m'a aussi permis de pouvoir me rendre compte de certaines difficultés que j'avais lors d'un travail de groupe."
-        },
-        {
-            "name" : "Jeu ludoéducatif",
-            "statut" : "Terminé",
-            "objectif" : "Créer, au sein d'une équipe, une application en suivant une démarche de développement intérative ou incrémentale. En partant d'un besoin décrit de manière imprécise ou incomplète par un client, l'objectif est de clarifier/compléter. collecter et formaliser le besoin puis de développer une application communicante intégrant la manipulation des données et respectant les paradigmes de qualité (ergonomie des IHM, qualité logicielle...)",
-            "intitulé" : "Développement d'un 'serious game' éducatif",
-            "thème" : "Développement web et efficace/ Management des systèmes d'information/ Anglais",
-            "nous" : "Pour ce projet, nous avons décidé de créer un jeu ludoéducatif sur l'Histoire pour les élèves de troisième. L'idée était de créer un jeu narratif à choix multiple. Nous voulions permettre aux utilisateurs d'avoir le choix entre réviser ou s'amuser. Pour la partie révision, l'utilisateur choisit l'histoire qu'il veut étudier puis la narration commence. Le joueur va devoir choisir à certains moments qui sont considéré comme décisif de faire une choix lié à une question. En mode révision, l'utilisateur dois continuer de répondre à la question tant qu'il n'a pas la bonne réponse. Pour ce qui est de la partie divertissement, si le joueur répond mal à la question alors l'histoire continue avec un chemin de narration différent et donc des résultats différents. Nous avons fait en sorte que les joueurs puissent comparer leurs résultats entre eux avec un classement.",
-            "je" : "Plus particulièrement, je me suis occupé de réaliser toutes les possibilité de transition entre les pages web, tout cela afin que l'utilisateur puise avoir un fil d'ariane tout au long de son parcours. Je me suis également occupé de créer les histoires annexes avec un des membres de l'équipe. Enfin j'ai participé à la création des interfaces graphiques du jeu.",
-            "attente" : "Il était attendu de nous de réaliser un jeu complet, fonctionnel et le tout pour présenter lors d'une soutenance avec un professeur technique et non-technique.",
-            "compétence" : "Ce projet m'a permis, en plus de développer mes compétences techniques, d'apprendre à travailler en groupe, à communiquer et à pouvoir aussi bien aider mes camarades que me faire aider."
-        },
-        {
-            "name" : "SAE 01 - SAE 02",
-            "statut" : "Terminé",
-            "objectif" : "L'objectif principal de cette SAE consistait à la production d'une intelligence artificielle capable de classifier des dépêches en fonction de certains mots présent dans celles-ci. Cette tâche était à réaliser en duo ou en trio avec une explication orale à faire au professeur référant",
-            "intitulé" : "Implémentation d'un besoin client / Comparaison d'approche algorithmique",
-            "thème" : "Programmation en Java",
-            "nous" : "Un programme avec différentes méthodes qui classait les dépêches en fonction d'un lexique défini par catégorie. Nous avons produit plusieurs classes et méthodes pour réaliser ce programme notamment la méthode de classification en fonction d'un lexique au format .txt, la méthode pour rédiger ce lexique et la valeur des mots de manières automatique.",
-            "je" : "Je me suis occupé de programmer la méthode qui s'occupait de classer les dépêches qui prenait comme argument une liste de dépêches, une liste de catégories et fichier comportant le lexique. La méthode parcourait chaque mots de chaque dépêches pour vérifier s'il était présent à l'intérieur du lexique. Tout cela dans le but d'en extraire un fichier au format texte avec les dépêches et leurs catégories correspondante ainsi qu'un taux correspondant à la réussite de la classification de la part du programme.",
-            "attente" : "Il était attendu de nous de réaliser un programme fonctionnel et quasiment automatique, du côté de notre groupe nous sommes parvenus à réaliser les attentes cependant nous avons tenté d'optimiser au plus possible notre programme dès son écriture et non après l'avoir écrit une première fois.",
-            "compétence" : "Cette SAE m'a permis d'apprendre à analyser et optimiser des programmes mais également de développer des applications simples et rapides. J'ai pu également améliorer mon travail aussi bien en équipe que individuellement."
-        },
-        {
            "name" : "Méga SAE de première année",
            "statut" : "Terminé",
            "objectif" : "Le but de cette MégaSAE consiste à la production d'une application lourde à destination des organisateurs d'événements dans le but de faciliter l'organisation d'événements qui a pu s'avérer être compliqué à cause du COVID. Cette SAE est en groupe de 5 ou 6 personnes avec trois présentations à faire en fin de projet.",
@@ -89,27 +56,5 @@
             "compétence" : "J'ai pu, pour ce projet, renforcer mes compétences des développement en python ainsi qu'en équipe." 
         }
         
-    ],
-    "Categories" : [
-        {
-            "name" : "1ère Année",
-            "nomProjets" : "SAE 01 - SAE 02;Méga SAE de première année"
-        },
-        {
-            "name" : "2e Année",
-            "nomProjets" : "Carnet de bord de stage;Jeu ludoéducatif;"
-        },
-        {
-            "name" : "3e Année",
-            "nomProjets" : "Jeu ludoéducatif 2"
-        },
-        {
-            "name" : "Professionnel",
-            "nomProjets" : "Etre membre d'un BDE;Développement d'une application Web CakePhP"
-        },
-        {
-            "name" : "Personnel",
-            "nomProjets" : "Développer un robot automatisateur"
-        }
-    ]  
+    ]
 }
