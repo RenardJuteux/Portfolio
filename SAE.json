@@ -54,7 +54,62 @@
             "je" : "J'ai été le responsable du pôle événementile du Bureau Des Elèves (BDE) du BUT Informatique de Grenoble. Je suis celui en charge de tout ce qui concerne l'organisation des événements quel qu'il soit que ce soit de contacter les établissements masi également les BDE externes avec qui nous voudrions être en partenariait lors d'un événement. Je m'occupe également de la communication avec les marques pour d'éventuel partenariat à l'année ou temporairement. Avec mon collègue du pôle communication nous nous occupons de tout ce qui s'agit de la partie communication que ce soit sur les réseaux sociaux ou bien en présentiel.",
             "attente" : "",
             "compétence" : "" 
+        },
+        {
+            "name" : "Développement d'une application Web CakePhP",
+            "statut" : "En cours",
+            "objectif" : "Développer une application en utilisant le framework CakePhP afin de remplacer une autre application développée en PhP classique.",
+            "intitulé" : "Développer une application Web en CakePhP",
+            "thème" : "Programmation web",
+            "nous" : "Nous avons réfléchis ensemble à un cahier des charges composé de fonctionnalités de l'application existante et de nouvelles idées.",
+            "je" : "Je me suis occupé de développer intégralement l'application en utilisant le framework de CakePhP et un peu de JavaScript. Également, de mettre en place une base de données MariaDB et de déployer l'application sur un serveur.",
+            "attente" : "L'attente de ce projet est de produire une application complète qui a pour but de remplacer une application déjà existante, le tout en ajoutant de nouvelles fonctionalités",
+            "compétence" : "Ce projet m'a permis d'apprendre à utiliser un nouveau framework. Également, j'ai pu aussi améliorer mes connaissances lors du développement de la base de données et du déploiement d'une application sur un serveur." 
+        },
+        {
+            "name" : "Développer un robot automatisateur",
+            "statut" : "Terminé",
+            "objectif" : "Permettre d'automatiser la construction d'un édifice dans le jeu Minecraft.",
+            "intitulé" : "Bot minecraft",
+            "thème" : "Conception",
+            "nous" : "-",
+            "je" : "Avec des amis, nous avons décidé d'ouvrir un serveur sur le jeu Minecraft. Nous avons donc décidé d'utiliser une version avec des mods (modifications apportées au jeu pour rajouter du contenu). Lorsque nous étions entrain de jouer, j'ai décidé de construire une allée marchande. Pour me faciliter le travail de construction, j'ai décidé de construire un robot qui me permettrait de construire les fondations des bâtiments. Il a donc fallu se servir du mod 'CC:tweaked' qui implémente dans le jeu des ordinateurs pouvant être programmé en LUA. J'ai donc codé deux fichiers un pour l'ordinateur et un pour le robot qui contruit. J'ai également ajouté une manière pour le robot de poser des blocs aléatoirement ou non. Donc avec ce robot je peux construire des murs en 2D ou 3D avec l'utilisation de blocks aléatoirement ou non?",
+            "attente" : "Avoir un robot présent pour construire des bâtiments.",
+            "compétence" : "J'ai pu, grâce à ce mini-projet, apprendre quelques notions de LUA tout en jouant au plus grand jeu vidéo de tous les temps." 
+        },
+        {
+            "name" : "Jeu ludoéducatif 2" ,
+            "statut" : "Terminé",
+            "objectif" : "Créer, au sein d'une équipe, une application en suivant une démarche de développement intérative ou incrémentale. En partant d'un besoin décrit de manière imprécise ou incomplète par un client, l'objectif est de clarifier/compléter. collecter et formaliser le besoin puis de développer une application communicante intégrant la manipulation des données et respectant les paradigmes de qualité (ergonomie des IHM, qualité logicielle...)",
+            "intitulé" : "Développement d'un jeu ludoéducatif",
+            "thème" : "Développement Python",
+            "nous" : "Pour ce projet, nous avons de décidé un jeu basé sur le 'loup touche touche'. Le thème était 'Réel ou imaginaire, dans le passé, le présent ou le futur, les nations s’affrontent pacifiquement.', également la durée était importante. Nous avons donc décidé de faire un jeu où deux joueurs s'affrontaient. Dans un premier temps l'un chassé l'autre dans une limite de temps définie. Si il arrivait à attraper l'autre alors il devait lui échapper dans un temps égale à celui qu'il avait mis. Si il ne parvenait pas à l'attraper pour la première phase il perdait.",
+            "je" : "Je me suis principalement occupé de la réalisation des personnages, de faire leur design ainsi que leur animation. Après ça j'ai mis en place un système de joker qui était propre à chaque pays (camps choisi par l'utilisateur).",
+            "attente" : "Réalisé un jeu complet dans une limite de 4 jours et 4 nuits",
+            "compétence" : "J'ai pu, pour ce projet, renforcer mes compétences des développement en python ainsi qu'en équipe." 
         }
         
-    ]
+    ],
+    "Categories" : [
+        {
+            "name" : "1ère Année",
+            "nomProjets" : "SAE 01 - SAE 02;Méga SAE de première année"
+        },
+        {
+            "name" : "2e Année",
+            "nomProjets" : "Carnet de bord de stage;Jeu ludoéducatif;"
+        },
+        {
+            "name" : "3e Année",
+            "nomProjets" : "Jeu ludoéducatif 2"
+        },
+        {
+            "name" : "Professionnel",
+            "nomProjets" : "Etre membre d'un BDE;Développement d'une application Web CakePhP"
+        },
+        {
+            "name" : "Personnel",
+            "nomProjets" : "Développer un robot automatisateur"
+        }
+    ]  
 }
