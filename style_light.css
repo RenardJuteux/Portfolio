@@ -88,7 +88,7 @@ main{
 .projet{
     align-items: center;
     background-color: white;
-    width: fit-content;
+    width: 25%;
     border: solid black 1px
 }
 .projet img{
