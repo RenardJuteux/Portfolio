@@ -54,6 +54,17 @@
             "je" : "Je me suis principalement occupé de la réalisation des personnages, de faire leur design ainsi que leur animation. Après ça j'ai mis en place un système de joker qui était propre à chaque pays (camps choisi par l'utilisateur).",
             "attente" : "Réalisé un jeu complet dans une limite de 4 jours et 4 nuits",
             "compétence" : "J'ai pu, pour ce projet, renforcer mes compétences des développement en python ainsi qu'en équipe." 
+        },
+        {
+            "name" : "Jeu ludoéducatif" ,
+            "statut" : "Terminé",
+            "objectif" : "Créer, au sein d'une équipe, une application en suivant une démarche de développement intérative ou incrémentale. En partant d'un besoin décrit de manière imprécise ou incomplète par un client, l'objectif est de clarifier/compléter. collecter et formaliser le besoin puis de développer une application communicante intégrant la manipulation des données et respectant les paradigmes de qualité (ergonomie des IHM, qualité logicielle...)",
+            "intitulé" : "Développement d'un jeu ludoéducatif",
+            "thème" : "Développement Python",
+            "nous" : "Pour ce projet, nous avons de décidé un jeu basé sur le 'loup touche touche'. Le thème était 'Réel ou imaginaire, dans le passé, le présent ou le futur, les nations s’affrontent pacifiquement.', également la durée était importante. Nous avons donc décidé de faire un jeu où deux joueurs s'affrontaient. Dans un premier temps l'un chassé l'autre dans une limite de temps définie. Si il arrivait à attraper l'autre alors il devait lui échapper dans un temps égale à celui qu'il avait mis. Si il ne parvenait pas à l'attraper pour la première phase il perdait.",
+            "je" : "Je me suis principalement occupé de la réalisation des personnages, de faire leur design ainsi que leur animation. Après ça j'ai mis en place un système de joker qui était propre à chaque pays (camps choisi par l'utilisateur).",
+            "attente" : "Réalisé un jeu complet dans une limite de 4 jours et 4 nuits",
+            "compétence" : "J'ai pu, pour ce projet, renforcer mes compétences des développement en python ainsi qu'en équipe." 
         }
         
     ],

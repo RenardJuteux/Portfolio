@@ -65,6 +65,8 @@ main{
 .categorie{
     text-align: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 #projets{
     display: flex;
