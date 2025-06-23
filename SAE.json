@@ -56,7 +56,7 @@
             "compétence" : "J'ai pu, pour ce projet, renforcer mes compétences des développement en python ainsi qu'en équipe." 
         },
         {
-            "name" : "Jeu ludoéducatif" ,
+            "name" : "Jeu ludoéducatif 2" ,
             "statut" : "Terminé",
             "objectif" : "Créer, au sein d'une équipe, une application en suivant une démarche de développement intérative ou incrémentale. En partant d'un besoin décrit de manière imprécise ou incomplète par un client, l'objectif est de clarifier/compléter. collecter et formaliser le besoin puis de développer une application communicante intégrant la manipulation des données et respectant les paradigmes de qualité (ergonomie des IHM, qualité logicielle...)",
             "intitulé" : "Développement d'un jeu ludoéducatif",
