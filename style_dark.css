@@ -110,7 +110,7 @@ main{
 }
 .projet h2{
     text-align: center;
-    color: black;
+    color: black !important;
 }
 .projet img:hover{
     opacity: 50%;
