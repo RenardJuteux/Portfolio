@@ -64,6 +64,7 @@ main{
 }
 .categorie{
     text-align: center;
+    align-items: center;
 }
 #projets{
     display: flex;
@@ -89,7 +90,8 @@ main{
     align-items: center;
     background-color: white;
     width: 25%;
-    border: solid black 1px
+    border: solid black 1px;
+    border-radius: 1em;
 }
 .projet img{
     width: 25%;
