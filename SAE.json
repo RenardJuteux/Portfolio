@@ -45,7 +45,7 @@
             "compétence" : "J'ai pu, grâce à ce mini-projet, apprendre quelques notions de LUA tout en jouant au plus grand jeu vidéo de tous les temps." 
         },
         {
-            "name" : "Jeu ludoéducatif 2" ,
+            "name" : "Jeu ludoéducatif" ,
             "statut" : "Terminé",
             "objectif" : "Créer, au sein d'une équipe, une application en suivant une démarche de développement intérative ou incrémentale. En partant d'un besoin décrit de manière imprécise ou incomplète par un client, l'objectif est de clarifier/compléter. collecter et formaliser le besoin puis de développer une application communicante intégrant la manipulation des données et respectant les paradigmes de qualité (ergonomie des IHM, qualité logicielle...)",
             "intitulé" : "Développement d'un jeu ludoéducatif",
@@ -56,5 +56,27 @@
             "compétence" : "J'ai pu, pour ce projet, renforcer mes compétences des développement en python ainsi qu'en équipe." 
         }
         
+    ],
+    "Catégorie" : [
+        {
+            "name" : "1ère année",
+            "projets" : "Méga SAE de première année"
+        },
+        {
+            "name" : "2ème année",
+            "projets" : "Etre membre d'un BDE"
+        },
+        {
+            "name" : "3ème année",
+            "projets" : "Jeu ludoéducatif"
+        },
+        {
+            "name" : "Professionnel",
+            "projets" : "Développement d'une application Web CakePhP"
+        },
+        {
+            "name" : "Personnel",
+            "projets" : "Développer un robot automatisateur"
+        }
     ]
 }

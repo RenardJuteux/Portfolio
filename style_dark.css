@@ -93,6 +93,7 @@ main{
 }
 .projet img{
     width: 100%;
+    background-color: white;
     height: auto;
 }
 .projet h2{
