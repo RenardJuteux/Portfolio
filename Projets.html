@@ -35,18 +35,25 @@
                             const container = document.getElementById('projets');
                             const projetsMap = {};
 
-                            // Créer une map des projets par nom pour accès rapide
+                            // Map des projets pour accès rapide par nom
                             data.Projets.forEach(projet => {
                                 projetsMap[projet.name] = projet;
                             });
 
                             // Pour chaque catégorie
                             data.Catégorie.forEach(categorie => {
-                                const projetsNoms = categorie.projets.split(',').map(n => n.trim()); // support si plusieurs projets
+                                const projetsNoms = categorie.projets.split(',').map(n => n.trim());
                                 const categoryDiv = document.createElement('div');
                                 categoryDiv.className = 'categorie';
 
-                                categoryDiv.innerHTML = `<h1>${categorie.name}</h1>`;
+                                // Titre de la catégorie
+                                const titreCategorie = document.createElement('h1');
+                                titreCategorie.textContent = categorie.name;
+                                categoryDiv.appendChild(titreCategorie);
+
+                                // Conteneur des projets de cette catégorie
+                                const projetsContainer = document.createElement('div');
+                                projetsContainer.className = 'projets-par-categorie';
 
                                 projetsNoms.forEach(nomProjet => {
                                     const projet = projetsMap[nomProjet];
@@ -61,10 +68,14 @@
                                                 <img src="${nom_img}" alt="image ${projet.name}">
                                             </label>
                                         `;
-                                        categoryDiv.appendChild(projetDiv);
+                                        projetsContainer.appendChild(projetDiv);
                                     }
                                 });
 
+                                // Ajouter le conteneur des projets à la catégorie
+                                categoryDiv.appendChild(projetsContainer);
+
+                                // Ajouter la catégorie complète au DOM principal
                                 container.appendChild(categoryDiv);
                             });
                         })
