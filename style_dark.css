@@ -69,6 +69,9 @@ main{
     position: relative;
     width: fit-content;
 }
+.categorie{
+    text-align: center;
+}
 #projetAffiche{
     position: relative;
     width: 80%;
@@ -90,7 +93,7 @@ main{
     border: solid black 1px
 }
 .projet img{
-    width: 100%;
+    width: 25%;
     background-color: white;
     height: auto;
 }
