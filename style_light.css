@@ -68,6 +68,11 @@ main{
     display: flex;
     flex-direction: column;
 }
+.projets-par-categorie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 #projets{
     display: flex;
     flex-direction: column;
