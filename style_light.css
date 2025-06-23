@@ -62,6 +62,9 @@ main{
 .current{
     text-decoration: underline;
 }
+.categorie{
+    text-align: center;
+}
 #projets{
     display: flex;
     flex-direction: column;
@@ -89,7 +92,7 @@ main{
     border: solid black 1px
 }
 .projet img{
-    width: 100%;
+    width: 25%;
     height: auto;
 }
 .projet h2{
