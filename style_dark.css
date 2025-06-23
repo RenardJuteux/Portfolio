@@ -88,12 +88,13 @@ main{
 }
 .projet{
     align-items: center;
-    background-color: #212830;
+    background-color: white;
     width: 25%;
-    border: solid black 1px
+    border: solid black 1px;
+    border-radius: 1em;
 }
 .projet img{
-    width: 100%;
+    width: 90%;
     background-color: white;
     height: auto;
 }
