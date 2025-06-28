@@ -34,10 +34,11 @@
                         .then(data => {
                             const container = document.getElementById('projets');
                             const projetsMap = {};
+                            let globalIndex = 0; // Index global pour tous les projets
 
-                            // Map des projets pour accès rapide par nom
-                            data.Projets.forEach(projet => {
-                                projetsMap[projet.name] = projet;
+                            // Map des projets pour accès rapide par nom et attribution d'index
+                            data.Projets.forEach((projet, index) => {
+                                projetsMap[projet.name] = { ...projet, globalIndex: index };
                             });
 
                             // Pour chaque catégorie
@@ -56,16 +57,16 @@
                                 projetsContainer.className = 'projets-par-categorie';
 
                                 projetsNoms.forEach(nomProjet => {
-                                    const projet = projetsMap[nomProjet];
-                                    if (projet) {
+                                    const projetData = projetsMap[nomProjet];
+                                    if (projetData) {
                                         const projetDiv = document.createElement('div');
-                                        const nom_img = "img/" + projet.name + ".png";
+                                        const nom_img = "img/" + projetData.name + ".png";
                                         projetDiv.className = 'projet';
                                         projetDiv.innerHTML = `
-                                            <h2>${projet.name}</h2>
+                                            <h2>${projetData.name}</h2>
                                             <label class="image-checkbox">
                                                 <input type="checkbox" class="checkImage" hidden />
-                                                <img src="${nom_img}" alt="image ${projet.name}">
+                                                <img src="${nom_img}" alt="image ${projetData.name}" data-index="${projetData.globalIndex}">
                                             </label>
                                         `;
                                         projetsContainer.appendChild(projetDiv);
@@ -151,9 +152,11 @@
                         detailsContainer.querySelectorAll('.projetAffiche').forEach(div => {
                             div.classList.add('hide');
                         });
-                        debugger;
+                        
                         // Afficher les détails du projet cliqué
-                        details.classList.remove('hide');
+                        if (details) {
+                            details.classList.remove('hide');
+                        }
 
                         // Basculer la visibilité des conteneurs
                         projetsContainer.classList.add('hide');
@@ -166,11 +169,11 @@
                     if (this.checked) {
                         // Exemple : passer en thème sombre
                         document.getElementById('theme-style').href = 'style_dark.css';
-
+                        localStorage.setItem('theme', 'dark');
                     } else {
                         // Exemple : revenir au thème clair
                         document.getElementById('theme-style').href = 'style_light.css';
-
+                        localStorage.setItem('theme', 'light');
                     }
                 });
 
