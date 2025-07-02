@@ -59,15 +59,15 @@
     ],
     "Catégorie" : [
         {
-            "name" : "1ère année",
+            "name" : "1ère année de BUT Informatique",
             "projets" : "Méga SAE de première année"
         },
         {
-            "name" : "2ème année",
+            "name" : "2ème année de BUT Informatique",
             "projets" : "Etre membre d'un BDE"
         },
         {
-            "name" : "3ème année",
+            "name" : "3ème année de BUT Informatique",
             "projets" : "Jeu ludoéducatif"
         },
         {
